@@ -1,6 +1,6 @@
 {
   "name": "node-reel-ext",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Human friendly cron for Node JS",
   "main": "index.js",
   "scripts": {
@@ -18,5 +18,14 @@
   "devDependencies": {
     "jest": "^28.1.0"
   },
-  "keywords": ["node", "cron", "schedule", "timer", "automation", "task", "job", "scheduler"]
+  "keywords": [
+    "node",
+    "cron",
+    "schedule",
+    "timer",
+    "automation",
+    "task",
+    "job",
+    "scheduler"
+  ]
 }
