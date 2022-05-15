@@ -10,8 +10,10 @@
 
 **`node-reel`** is a heavily inspired by laravel task scheduler syntax thanks to [@taylorotwell](https://github.com/taylorotwell) and uses [`node-cron`](https://github.com/merencia/node-cron) by [merencia](https://github.com/merencia) as the default cron driver to run cron tasks.
 
-## Notice: 
-### Changelog:
+## Notice:
+This project forked from https://github.com/shakee93/node-reel
+
+### v2.0 Change log:
 
  - update "node-cron" to: "^3.0.0"
  - fix a warning: (node:23300) [DEP0128] DeprecationWarning: Invalid 'main' field in '\node_modules\node-reel\package.json' of 'src/index.js'. Please either fix that or report
