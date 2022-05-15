@@ -1,5 +1,5 @@
 {
-  "name": "node-reel-ext",
+  "name": "node-reel-cron",
   "version": "2.0.2",
   "description": "Human friendly cron for Node JS",
   "main": "index.js",
