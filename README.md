@@ -1,10 +1,4 @@
 <p align="center">
-<img width="260" src="https://shakee93.github.io/vue-toasted/assets/images/node-reel.svg" alt="node-reel logo">
-</p>
-<p align="center">
-<a href="http://npmjs.com/package/node-reel" rel="nofollow"><img src="https://camo.githubusercontent.com/62a0977219e4ff041365ce6c762e17f27a66b9d7/68747470733a2f2f696d672e736869656c64732e696f2f6e706d2f762f6e6f64652d7265656c2e7376673f7374796c653d666c61742d737175617265" alt="npm" data-canonical-src="https://img.shields.io/npm/v/node-reel.svg?style=flat-square" style="max-width:100%;"></a>
-</p>
-<p align="center">
 <img src="https://user-images.githubusercontent.com/14835725/43674196-6f593114-97ed-11e8-80c1-d054391062d6.png" alt="node-reel logo">
 </p>
 
@@ -13,7 +7,7 @@
 ## Notice:
 This project forked from https://github.com/shakee93/node-reel
 
-### v2.0 Change log:
+### v2.0.1 Change log:
 
  - update "node-cron" to: "^3.0.0"
  - fix a warning: (node:23300) [DEP0128] DeprecationWarning: Invalid 'main' field in '\node_modules\node-reel\package.json' of 'src/index.js'. Please either fix that or report
