@@ -1,24 +1,25 @@
 <p align="center">
-<img src="https://user-images.githubusercontent.com/14835725/43674196-6f593114-97ed-11e8-80c1-d054391062d6.png" alt="node-reel logo">
+<img src="https://user-images.githubusercontent.com/14835725/43674196-6f593114-97ed-11e8-80c1-d054391062d6.png" alt="node-reel-cron logo">
 </p>
 
-**`node-reel`** is a heavily inspired by laravel task scheduler syntax thanks to [@taylorotwell](https://github.com/taylorotwell) and uses [`node-cron`](https://github.com/merencia/node-cron) by [merencia](https://github.com/merencia) as the default cron driver to run cron tasks.
+**`node-reel-cron`** is a heavily inspired by laravel task scheduler syntax thanks to [@taylorotwell](https://github.com/taylorotwell) and uses [`node-cron`](https://github.com/merencia/node-cron) by [merencia](https://github.com/merencia) as the default cron driver to run cron tasks.
 
 ## Notice:
 This project forked from https://github.com/shakee93/node-reel
 
-### v2.0.1 Change log:
+### v2.0.5 Change log:
 
  - update "node-cron" to: "^3.0.0"
- - fix a warning: (node:23300) [DEP0128] DeprecationWarning: Invalid 'main' field in '\node_modules\node-reel\package.json' of 'src/index.js'. Please either fix that or report
+ - fix a warning: (node:23300) [DEP0128] DeprecationWarning: Invalid 'main' field in '\node_modules\node-reel-cron\package.json' of 'src/index.js'. Please either fix that or report
 it to the module author
  - add some test for main functions
  - adjust options when create the new object.
  - validate cron expressions when schedule job.
+ - update documents
 
-### why node-reel ? :wink:
+### why node-reel-cron ? :wink:
 ```javascript
-const reel = require('node-reel')
+const reel = require('node-reel-cron')
 
 reel().call(() => {
 	// say hello on mondays
@@ -31,7 +32,7 @@ reel().command('npm run clean_trash').everyThirtyMinutes().run()
 ### Install
 using the npm or yarn
 ```shell
-npm i node-reel --save
+npm i node-reel-cron --save
 ```
 
 ### Schedule Frequencies
@@ -75,10 +76,10 @@ Method  | Description
 
 
 ### Adapters
-`node-reel` will use `node-cron` as default adapter. but you can pass your own adapter and return your own object.
+`node-reel-cron` will use `node-cron` as default adapter. but you can pass your own adapter and return your own object.
 
 ```javascript
-const Reel = require('node-reel').Reel;
+const Reel = require('node-reel-cron').Reel;
 
 const reel = new Reel({
     adapter : (object) => {
