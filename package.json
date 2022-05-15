@@ -1,18 +1,21 @@
 {
-  "name": "node-reel",
-  "version": "1.0.12",
+  "name": "node-reel-ext",
+  "version": "2.0.0",
   "description": "Human friendly cron for Node JS",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "dependencies": {
-    "node-cron": "^1.2.1"
+    "node-cron": "^3.0.0"
   },
   "author": "shakee93",
   "repository": {
     "type": "git",
-    "url": "git://github.com/shakee93/node-reel.git"
+    "url": "git://github.com/charles-zh/node-reel-ext.git"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^28.1.0"
+  }
 }

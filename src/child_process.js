@@ -8,15 +8,15 @@
 // execute a single shell command where "cmd" is a string
 exports.exec = function (cmd, cb) {
     // this would be way easier on a shell/bash script :P
-    var child_process = require('child_process');
+    const child_process = require('child_process');
 
     // fix for windows
     if (!cmd.includes('npm.cmd')) cmd = cmd.replace('npm', /^win/.test(process.platform) ? 'npm.cmd' : 'npm')
 
-    var parts = cmd.split(/\s+/g);
-    var p = child_process.spawn(parts[0], parts.slice(1), { stdio: 'inherit', windowsHide: true });
+    const parts = cmd.split(/\s+/g);
+    const p = child_process.spawn(parts[0], parts.slice(1), {stdio: 'inherit', windowsHide: true});
     p.on('exit', function (code) {
-        var err = null;
+        let err = null;
         if (code) {
             err = new Error('command "' + cmd + '" exited with wrong status code "' + code + '"');
             err.code = code;
@@ -30,7 +30,7 @@ exports.exec = function (cmd, cb) {
 // execute multiple commands in series
 // this could be replaced by any flow control lib
 exports.series = function (cmds, cb) {
-    var execNext = function () {
+    const execNext = function () {
         exports.exec(cmds.shift(), function (err) {
             if (err) {
                 cb(err);

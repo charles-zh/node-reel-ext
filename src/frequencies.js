@@ -43,7 +43,7 @@ class ReelFrequencies {
         let segments = time.split(':');
 
         return this.spliceIntoPosition(1, Number(segments[0]))
-            .spliceIntoPosition(2, segments.length == 2 ? Number(segments[0]) : '0');
+            .spliceIntoPosition(2, segments.length === 2 ? Number(segments[0]) : '0');
     }
 
 
@@ -148,7 +148,7 @@ class ReelFrequencies {
 
     spliceIntoPosition(position, value) {
 
-        var segments = this.expression.split(' ');
+        const segments = this.expression.split(' ');
 
         segments[Number(position) - 1] = value;
 

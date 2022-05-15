@@ -10,7 +10,8 @@ class Reel extends ReelFrequencies {
 		this.expression = "* * * * *";
 		this.adapter = options.adapter || null;
 		this.callback = options.callback || null;
-
+		this.scheduled = options.scheduled || true;
+		this.timezone = options.timezone || '';
 	}
 
 	timezone(timezone) {
@@ -29,7 +30,7 @@ class Reel extends ReelFrequencies {
 	}
 
 	command(commands, callback) {
-		var shell = require('./child_process');
+		const shell = require('./child_process');
 
 		this.callback = () => {
 
@@ -50,7 +51,8 @@ class Reel extends ReelFrequencies {
 		let data = {
 			expression: this.expression,
 			callback: this.callback,
-			timezone: this.timezone
+			timezone: this.timezone,
+			scheduled: this.scheduled
 		};
 
 		if(this.adapter) {
